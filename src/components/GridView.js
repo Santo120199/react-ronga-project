@@ -22,14 +22,24 @@ const Wrapper = styled.section`
   .products-container {
     display: grid;
     gap: 2rem 1.5rem;
+    justify-items: center;
   }
 
-  @media (min-width: 992px) {
+  @media screen and (min-width: 320px) and (max-width: 599px) {
     .products-container {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 0fr);
+      justify-content: center;
     }
   }
-  @media (min-width: 1170px) {
+
+  @media screen and (min-width: 600px) and (max-width: 992px) {
+    .products-container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+
+  @media (min-width: 993px) {
     .products-container {
       grid-template-columns: repeat(3, 1fr);
     }

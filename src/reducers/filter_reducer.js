@@ -26,8 +26,6 @@ const filter_reducer = (state, action) => {
   }
 
   if (action.type === FILTER_PRODUCTS) {
-    console.log('filtering')
-
     const { all_lavori } = state
     const { type } = state.filters
     let tempLav = [...all_lavori]

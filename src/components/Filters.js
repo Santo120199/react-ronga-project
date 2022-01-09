@@ -39,12 +39,12 @@ const Filters = () => {
 const Wrapper = styled.section`
   .filtro {
     display: flex;
-    margin-left: 140px;
+
     margin-bottom: 20px;
+    justify-content: center;
   }
   .filtro div {
     display: flex;
-    margin-left: 300px;
   }
 
   .filtro div button {
@@ -60,6 +60,16 @@ const Wrapper = styled.section`
 
   .active {
     color: black;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .filtro {
+      margin-left: 0;
+    }
+
+    .filtro div button {
+      font-size: 18px;
+    }
   }
 `
 

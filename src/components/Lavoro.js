@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Lavoro = ({ name, images, id }) => {
   return (
-    <Wrapper>
+    <Wrapper className=''>
       <Link to={`/lavori/${id}`} className='link'>
         <img src={images[0]} alt='' />
       </Link>
@@ -20,7 +20,7 @@ const Lavoro = ({ name, images, id }) => {
 }
 
 const Wrapper = styled.article`
-  container {
+  .container {
     justify-content: center;
   }
   img {
@@ -41,11 +41,25 @@ const Wrapper = styled.article`
     text-transform: uppercase;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 374px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     img {
       width: 250px;
-      height: 250px;
+      height: 250px !important;
     }
+    .descr {
+      font-size: 14px;
+    }
+    .container {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    img {
+      width: 300px;
+      height: 300px !important;
+    }
+
     .descr {
       font-size: 14px;
     }
