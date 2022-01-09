@@ -34,8 +34,8 @@ const Wrapper = styled.section`
 
   @media screen and (min-width: 600px) and (max-width: 992px) {
     .products-container {
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+      grid-template-columns: repeat(2, 0fr);
+      justify-content: center;
     }
   }
 
