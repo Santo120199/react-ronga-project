@@ -73,7 +73,6 @@ const Wrapper = styled.section`
   }
   .swiper-container {
       width: 50%;
-      
   }
 
   .swiper {
@@ -102,6 +101,39 @@ const Wrapper = styled.section`
   .titolo {
     font-size: 16px;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 374px){
+
+    .swiper-container {
+      width: 100%;
+    }
+
+    .titolo {
+      font-size: 14px;
+    }
+
+    .swiper-slide {
+     
+    }
+
+    .swiper-slide img {
+      width: 150px;
+      height: 250
+    
+    }
+
+    .swiper-button-next {
+         
+        font-size: 20px;
+
+    }
+
+    
+
+
+
+  }
+
 `
 
 export default Servizi

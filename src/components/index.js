@@ -4,7 +4,6 @@ import Loading from './Loading'
 import Error from './Error'
 
 import Filters from './Filters'
-import Sort from './Sort'
 
 import PageHero from './PageHero'
 
@@ -21,13 +20,13 @@ import LavoroImages from './LavoroImages'
 import LavoriList from './LavoriList'
 import Servizi from './Servizi'
 import FeaturedLavori from './FeaturedLavori'
+import Servizio from './Servizio'
 
 export {
   Hero,
   Loading,
   Error,
   Filters,
-  Sort,
   PageHero,
   Navbar,
   Footer,
@@ -41,4 +40,5 @@ export {
   LavoriList,
   Servizi,
   FeaturedLavori,
+  Servizio,
 }
