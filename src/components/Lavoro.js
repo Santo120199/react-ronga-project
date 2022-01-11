@@ -4,16 +4,18 @@ import { formatPrice } from '../utils/helpers'
 import { FaSearch } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-const Lavoro = ({ name, images, id }) => {
+const Lavoro = ({ name, images, id, provinciaSigla, citta }) => {
   return (
-    <Wrapper className=''>
+    <Wrapper className='container'>
       <Link to={`/lavori/${id}`} className='link'>
         <img src={images[0]} alt='' />
       </Link>
 
       <div className='descr'>
         <div className='nome'>{name}</div>
-        <div className='luogo'></div>
+        <div className='luogo'>
+          {citta} ({provinciaSigla})
+        </div>
       </div>
     </Wrapper>
   )
@@ -21,21 +23,23 @@ const Lavoro = ({ name, images, id }) => {
 
 const Wrapper = styled.article`
   .container {
-    justify-content: center;
+    width: 300px !important;
+    max-width: 300px;
   }
   img {
-    width: 400px;
-    height: 400px !important;
+    width: 300px;
+    height: 250px !important;
     display: block;
     object-fit: cover;
     transition: var(--transition);
   }
   .descr {
     font-family: Gotham-Medium;
-    letter-spacing: 3px;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 14px;
     word-wrap: break-word;
     margin-top: 1rem;
+    max-width: 300px;
   }
   .nome {
     text-transform: uppercase;
@@ -57,7 +61,7 @@ const Wrapper = styled.article`
   @media screen and (min-width: 769px) and (max-width: 992px) {
     img {
       width: 300px;
-      height: 300px !important;
+      height: 250px !important;
     }
 
     .descr {

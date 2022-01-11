@@ -3,72 +3,74 @@ import styled from 'styled-components'
 
 const Contatti = () => {
   return (
-    <Wrapper className='page-100 section-center'>
+    <>
       <h1 className='title'>INFORMAZIONI UTILI</h1>
       <hr className='line' />
-      <div className='info'>
-        <h2 id='intestazione'>Indirizzo</h2>
-        <hr className='line-vertical cont prova' />
-        <p>
-          <span>Sede Legale</span>
-          <br />
-          Via Bastia 2, 84125 <br />
-          Salerno (SA) -Italy
-        </p>
-      </div>
-      <hr className='line' />
-      <div className='info'>
-        <h2 id='intestazione'>Contatti</h2>
-        <hr className='line-vertical cont prova1' />
-        <p>
-          E - MAIL <br />
-          info@impresaronga.com <br />
-          <br />
-          PEC <br />
-          impresaronga@pec.it
-        </p>
-        <hr className='line-vertical cont prova2' />
-        <p>
-          PARTITA IVA <br />
-          03844930655 <br />
-          <br />
-          TELEFONO <br />
-          +39 089 233496
-        </p>
-      </div>
-      <hr className='line' />
-      <div className='info'>
-        <h2 id='intestazione' className='intest'>
-          TEAM
-        </h2>
-        <hr className='line-vertical team prova' />
-        <p>
-          AMMINISTRATORE DELEGATO <br />
-          Sergio Ronga <br />
-          <br />
-          RESPONSABILE UFFICIO AMMINISTRATIVO <br />
-          Sig.ra Antonietta Anastasio <br />
-          <br />
-          RESPONSABILE UFFICIO COMUNICAZIONI <br />
-          Lorenzo Ronga <br />
-          <br />
-        </p>
-        <hr className='line-vertical team prova2' />
-        <p>
-          RESPONSABILE TECNICO <br />
-          Geom. Ciro Memoli <br />
-          <br />
-          RESPONSABILE TECNICO <br />
-          Gianluca Ronga <br />
-          <br />
-          RESPONSABILE UFFICIO GARE <br />
-          Geom. Antonio Ronca <br />
-          <br />
-          RESPONSABILE UNICO CANTIERE <br />
-          Sig. Francesco Vicidomini
-        </p>
-      </div>
-    </Wrapper>
+      <Wrapper className='page-100 section-center'>
+        <div className='info'>
+          <h2 id='intestazione'>Indirizzo</h2>
+          <hr className='line-vertical cont prova' />
+          <p>
+            <span>Sede Legale</span>
+            <br />
+            Via Bastia 2, 84125 <br />
+            Salerno (SA) -Italy
+          </p>
+        </div>
+        <hr className='line' />
+        <div className='info'>
+          <h2 id='intestazione'>Contatti</h2>
+          <hr className='line-vertical cont prova1' />
+          <p>
+            E - MAIL <br />
+            info@impresaronga.com <br />
+            <br />
+            PEC <br />
+            impresaronga@pec.it
+          </p>
+          <hr className='line-vertical cont prova2' />
+          <p>
+            PARTITA IVA <br />
+            03844930655 <br />
+            <br />
+            TELEFONO <br />
+            +39 089 233496
+          </p>
+        </div>
+        <hr className='line' />
+        <div className='info'>
+          <h2 id='intestazione' className='intest'>
+            TEAM
+          </h2>
+          <hr className='line-vertical team prova' />
+          <p>
+            AMMINISTRATORE DELEGATO <br />
+            Sergio Ronga <br />
+            <br />
+            RESPONSABILE UFFICIO AMMINISTRATIVO <br />
+            Sig.ra Antonietta Anastasio <br />
+            <br />
+            RESPONSABILE UFFICIO COMUNICAZIONI <br />
+            Lorenzo Ronga <br />
+            <br />
+          </p>
+          <hr className='line-vertical team prova2' />
+          <p>
+            RESPONSABILE TECNICO <br />
+            Geom. Ciro Memoli <br />
+            <br />
+            RESPONSABILE TECNICO <br />
+            Gianluca Ronga <br />
+            <br />
+            RESPONSABILE UFFICIO GARE <br />
+            Geom. Antonio Ronca <br />
+            <br />
+            RESPONSABILE UNICO CANTIERE <br />
+            Sig. Francesco Vicidomini
+          </p>
+        </div>
+      </Wrapper>
+    </>
   )
 }
 

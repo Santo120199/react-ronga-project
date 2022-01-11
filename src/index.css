@@ -45,7 +45,7 @@ Variables
   --fixed-width: 620px;
   --background: #f7f6f2;
   --clr-granata: #7b1b02;
-  --background-image: url(./assets/sacra12.jpg);
+  --background-image: url(./assets/background.jpg);
 }
 
 @font-face {
@@ -95,14 +95,23 @@ Variables
 }
 
 @font-face {
-  font-family: Mirage;
-  src: url(./assets/font/Mirage/MADE\ Mirage\ Regular\ PERSONAL\ USE.otf);
+  font-family: Libre-Baskerville;
+  src: url(./assets/font/Libre_Baskerville/LibreBaskerville-Regular.ttf)
+    format('truetype');
 }
 
 @font-face {
-  font-family: Mirage-Medium;
-  src: url(./assets/font/Mirage/MADE\ Mirage\ Medium\ PERSONAL\ USE.otf);
+  font-family: Libre-Baskerville-Bold;
+  src: url(./assets/font/Libre_Baskerville/LibreBaskerville-Bold.ttf)
+    format('truetype');
 }
+
+@font-face {
+  font-family: Libre-Baskerville-Italic;
+  src: url(./assets/font/Libre_Baskerville/LibreBaskerville-Italic.ttf)
+    format('truetype');
+}
+
 /*
 =============== 
 Global Styles
@@ -208,10 +217,10 @@ h5 {
   margin-bottom: 50px;
 }
 .title {
-  margin-top: 50px;
+  margin-top: 25px;
   text-align: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 35px;
   font-family: Times-New-Roman;
   letter-spacing: 5px;

@@ -15,6 +15,7 @@ const GridView = ({ lavori }) => {
 }
 
 const Wrapper = styled.section`
+  margin-bottom: 20px;
   img {
     height: 175px;
   }

@@ -63,13 +63,15 @@ const Wrapper = styled.section`
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
+    justify-content: center;
   }
 
   .certificato {
-    width: 250px;
+    width: 200px;
     height: 350px;
     border: 1px solid black;
-    margin-right: 5px !important;
+    margin-right: 20px !important;
+    margin-bottom: 40px;
   }
   .certificato img {
     width: 100%;

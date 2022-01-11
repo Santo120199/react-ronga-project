@@ -67,11 +67,12 @@ const Wrapper = styled.section`
     font-family: Gotham-Book;
     font-size: 20px;
     letter-spacing: 5px;
-    margin-top: 2.5rem;
+    margin-top: 0;
   }
 
   .pretitle-pers {
     font-size: 25px;
+    margin-top: 30px;
   }
 
   #fotosocietà {

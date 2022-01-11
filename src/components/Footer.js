@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
 import logo from '../assets/logo nuovo.png'
+import Brochure from '../assets/Brochure.pdf'
 const Footer = () => {
   return (
     <Wrapper>
@@ -33,19 +35,25 @@ const Footer = () => {
             <div className='footer-col da'>
               <h4>DOWNLOAD</h4>
               <p>
-                <a href=''>Brochure</a>
+                <a href={Brochure}>Brochure</a>
                 <br />
                 <a href=''>Area Stampa</a>
               </p>
             </div>
             <div className='footer-col da'>
               <h4>SOCIAL</h4>
-              <p>
-                <a href='#'>Instagram</a>
+              <p className='social'>
+                <a href='https://www.instagram.com/salvatore_ronga_srl/?utm_source=ig_profile_share&igshid=174q4l23lnw74'>
+                  <AiFillInstagram fontSize='1.8rem' />
+                </a>
                 <br />
-                <a href='#'>Linkedin</a>
+                <a href='https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHrBlZtP1-78wAAAWkuZClwPK_kN6dkiTNsNFGQdqf1hcrgpkaTDgJsxvE1DEueJGXigFtWHgeN24faMA1Rz8KAqr7vE0o0XNTc2HX2u1Fp_TdBUPxzryDtGrMbv0ibW6VKU7o=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsalvatore-ronga-s-r-l%2F'>
+                  <AiFillLinkedin fontSize='1.8rem' />
+                </a>
                 <br />
-                <a href='#'>Facebook</a>
+                <a href='https://www.facebook.com/salvatorerongasrl/'>
+                  <AiFillFacebook fontSize='1.8rem' />
+                </a>
               </p>
             </div>
           </div>
@@ -60,20 +68,28 @@ const Footer = () => {
 }
 
 const Wrapper = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
   .footer {
     background-color: #f7f6f2;
-    border-top: 1px solid black;
     font-family: Gotham-Book;
     overflow: hidden;
   }
 
   .container {
-    max-width: 1800px;
-    margin: auto;
+    max-width: var(--max-width);
+    width: 90vw;
+    margin: 0;
     padding-top: 40px;
     padding-bottom: 10px;
     margin-left: 20px;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 
   .row {
@@ -83,18 +99,12 @@ const Wrapper = styled.footer`
   }
 
   .footer-col {
-    width: 20%;
-  }
-
-  .log {
-    margin-top: -135px;
-    margin-bottom: -100px;
-    padding: 0;
-    transform: scale(0.6);
+    width: 50%;
+    margin-bottom: 20px;
   }
 
   .log img {
-    width: 400px;
+    width: 250px;
     padding: 0;
     margin: 0;
   }
@@ -109,8 +119,19 @@ const Wrapper = styled.footer`
     font-size: 16px;
   }
 
+  .footer-col a {
+    color: black;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .bar {
     background-color: #600316;
+    width: 100%;
   }
 
   .bar p {
@@ -120,13 +141,18 @@ const Wrapper = styled.footer`
     color: white;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 424px) {
-    .log {
-      transform: scale(0.4);
-      margin-left: -20px;
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .container {
+      grid-template-columns: repeat(1, 1fr);
     }
+
+    .log img {
+      width: 150px;
+    }
+
     .footer-col {
       width: 100%;
+      margin-bottom: 10px;
     }
     .da {
       margin-left: 0;
@@ -144,7 +170,15 @@ const Wrapper = styled.footer`
     }
   }
 
-  @media (max-width: 767px) {
+  @media screen and (min-width: 426px) and (max-width: 800px) {
+    .container {
+      grid-template-columns: repeat(2, 0.5fr);
+    }
+
+    .log img {
+      width: 150px;
+    }
+
     .footer-col {
       width: 100%;
       padding: 20px;
@@ -152,21 +186,13 @@ const Wrapper = styled.footer`
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 801px) and (max-width: 1023px) {
     .container {
       max-width: 1024px;
       text-align: center;
     }
     .footer-col {
       width: 50%;
-    }
-    .row {
-      margin-left: 20px;
-    }
-    .log {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
     }
   }
 `

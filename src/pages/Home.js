@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <Wrapper className='page'>
       <section className='main page-100'>
-        <div className='text'>
+        <div className='section-center text'>
           <h2 className='pretitle'>DAL 1945</h2>
           <h1 className='title'>
             Curiamo il nostro <br /> patrimonio
@@ -16,10 +16,10 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className='page-100'>
+      {/*  <section className='page-100'>
         <Servizi />
         <FeaturedLavori />
-      </section>
+      </section> */}
     </Wrapper>
   )
 }
@@ -30,15 +30,10 @@ const Wrapper = styled.section`
     background-size: cover;
   }
 
-  .text {
-    margin-left: 50px;
-    margin-top: 100px;
-  }
-
   .pretitle {
     text-align: left;
     align-items: left;
-    font-family: Mirage;
+    font-family: Libre-Baskerville;
     font-size: 25px;
     letter-spacing: 5px;
     margin-top: 2.5rem;
@@ -46,26 +41,28 @@ const Wrapper = styled.section`
   }
 
   .title {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: left;
     align-items: left;
     margin-bottom: 1rem;
     font-size: 50px;
-    font-family: Mirage;
+    font-family: Libre-Baskerville-Bold;
     letter-spacing: 5px;
     color: white;
   }
 
-  .text p {
-    text:align: left;
-    align-items: left;
-    font-size: 18px;
-    font-family: Mirage;
-    letter-spacing: 2px;
-    color: white;
-
+  .text {
+    margin-top: -50px;
   }
 
+  .text p {
+    text-align: left;
+    align-items: left;
+    font-size: 18px;
+    font-family: Libre-Baskerville-Italic;
+    letter-spacing: 2px;
+    color: white;
+  }
 `
 
 export default Home

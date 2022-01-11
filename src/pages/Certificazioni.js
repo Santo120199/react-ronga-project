@@ -6,16 +6,20 @@ import { Link } from 'react-router-dom'
 
 const Certificazioni = () => {
   return (
-    <Wrapper className='page-100 section-center'>
-      <h1 className='title'>INFORMAZIONI UTILI</h1>
-      <hr className='line' />
-      <SOA />
-      <hr className='line' />
-      <Qualità />
-      <hr className='line' />
-      <Legalità />
-      <Certificati />
-    </Wrapper>
+    <>
+      <Wrapper className='page'>
+        <div className='section-center'>
+          <h1 className='title'>LE NOSTRE CERTIFICAZIONI</h1>
+          <hr className='line' />
+          <SOA />
+          <hr className='line' />
+          <Qualità />
+          <hr className='line' />
+          <Legalità />
+          <Certificati />
+        </div>
+      </Wrapper>
+    </>
   )
 }
 const Wrapper = styled.div`

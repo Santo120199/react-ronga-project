@@ -11,7 +11,7 @@ const Nav = () => {
   const { openSidebar } = useProductsContext()
 
   return (
-    <NavContainer>
+    <NavContainer className=''>
       <div className='nav-center'>
         <div className='nav-header'>
           <Link to='/'>
@@ -47,13 +47,14 @@ const NavContainer = styled.nav`
     width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: -20px;
     img {
       width: 250px;
       margin-left: -15px;
@@ -71,6 +72,7 @@ const NavContainer = styled.nav`
   }
   .nav-links {
     display: none;
+    margin-rigth: -40px;
   }
   @media (min-width: 992px) {
     .nav-toggle {
@@ -83,15 +85,16 @@ const NavContainer = styled.nav`
     }
     .nav-links {
       display: flex;
-      justify-content: center;
-      margin-top: 10px;
+      justify-content: right;
+
+      margin-rigth: -40px;
       li {
         margin: 0 0.5rem;
       }
       a {
         color: var(--clr-black);
-        font-size: 1.25rem;
-        font-family: Gotham-Book;
+        font-size: 1.125rem;
+        font-family: Libre-Baskerville;
         text-transform: capitalize;
         letter-spacing: var(--spacing);
         padding: 0.5rem;
