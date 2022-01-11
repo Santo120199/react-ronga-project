@@ -18,27 +18,27 @@ const Lavoro = () => {
   const { name, storia, restauro, img1, imgD, images } = lavoro
 
   return (
-    <Wrapper className='page-100 sec'>
-      <h1 className='title titleCap'>{name}</h1>
-      <div className='main-work'>
-        <img src={img1} alt='' />
-        <div className='main-text'>
-          <h1 className='storia'>STORIA</h1>
-          <p>{storia}</p>
-          <h1 className='storia'>RESTAURO</h1>
-          <p>{restauro}</p>
+    <Wrapper className='page'>
+      <div className='section-center'>
+        <h1 className='title titleCap'>{name}</h1>
+        <div className='main-work'>
+          <img src={img1} alt='' />
+          <div className='main-text'>
+            <h1 className='storia'>STORIA</h1>
+            <p>{storia}</p>
+            <h1 className='storia'>RESTAURO</h1>
+            <p>{restauro}</p>
+          </div>
         </div>
+        <hr className='line' />
+        <Dettagli lavoro={lavoro} />
+        <LavoroImages images={images} />
       </div>
-      <hr className='line' />
-      <Dettagli lavoro={lavoro} />
-      <LavoroImages images={images} />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
-  width: 90vw;
-
   .titleCap {
     text-transform: uppercase;
   }
@@ -53,8 +53,8 @@ const Wrapper = styled.main`
     margin-bottom: 50px;
   }
   .main-work img {
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
   }
   .main-text {
     display: flex;
@@ -78,7 +78,7 @@ const Wrapper = styled.main`
     margin-top: 0;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 374px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     .main-work {
       margin-left: 0;
       justify-content: center;

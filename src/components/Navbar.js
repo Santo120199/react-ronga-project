@@ -93,7 +93,7 @@ const NavContainer = styled.nav`
       }
       a {
         color: var(--clr-black);
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-family: Libre-Baskerville;
         text-transform: capitalize;
         letter-spacing: var(--spacing);

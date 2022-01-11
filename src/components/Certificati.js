@@ -58,7 +58,6 @@ const Certificati = () => {
 
 const Wrapper = styled.section`
   .certificati {
-    margin-left: 100px;
     margin-bottom: 100px;
     display: flex !important;
     flex-direction: row !important;

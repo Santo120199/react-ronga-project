@@ -79,6 +79,54 @@ const Wrapper = styled.section`
     font-size: 20px;
     letter-spacing: 5px;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .info {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .linea {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #intestazione {
+      margin: 0;
+    }
+
+    .info p {
+      padding: 0;
+    }
+    .info-pers span {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .linea {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #intestazione {
+      margin: 0;
+    }
+
+    .info p {
+      padding: 0;
+    }
+    .info-pers span {
+      margin-top: 10px;
+    }
+  }
 `
 
 export default Dettagli

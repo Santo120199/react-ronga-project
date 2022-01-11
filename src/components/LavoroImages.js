@@ -31,9 +31,10 @@ const LavoroImages = ({ images = [] }) => {
 
 const Wrapper = styled.section`
   .foto {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    display: grid;
-    margin: 0;
+    align-items: center;
     width: 100%;
     padding: 0;
   }
@@ -45,7 +46,6 @@ const Wrapper = styled.section`
   }
   img {
     width: 800px;
-
     border-radius: var(--radius);
   }
   .gallery {
@@ -64,23 +64,44 @@ const Wrapper = styled.section`
   .active {
     box-shadow: 0px 0px 0px 2px var(--clr-primary-5);
   }
-  @media (max-width: 576px) {
+  @media screen and (min-width: 320px) and (max-width: 576px) {
     .main {
+      width: 250px;
       height: 300px;
     }
     .gallery {
+      grid-template-columns: repeat(4, 1fr);
+
       img {
+        width: 50px;
         height: 50px;
       }
     }
   }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .main {
+      width: 400px;
+      height: 450px;
+    }
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+
+      img {
+        width: 80px;
+        heigth: 80px;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
     .main {
       height: 500px;
     }
     .gallery {
       img {
-        height: 75px;
+        width: 50px;
+        height: 50px;
       }
     }
   }
