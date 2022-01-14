@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useFilterContext } from '../context/filter_context'
-import { getUniqueValues, formatPrice } from '../utils/helpers'
-import { FaCheck } from 'react-icons/fa'
+import { getUniqueValues } from '../utils/helpers'
 
 const Filters = () => {
   const {
-    filters: { categoria, type },
+    filters: { type },
     updateFilters,
     all_lavori,
   } = useFilterContext()
@@ -24,7 +23,7 @@ const Filters = () => {
                 onClick={updateFilters}
                 name='type'
                 type='button'
-                className={`${newT === t.toLowerCase() ? 'active' : null}`}
+                className={`${type === t.toLowerCase() ? 'active' : null}`}
               >
                 {t}
               </button>
@@ -59,7 +58,7 @@ const Wrapper = styled.section`
   }
 
   .active {
-    color: black;
+    color: var(--clr-granata) !important;
   }
 
   @media screen and (min-width: 320px) and (max-width: 768px) {

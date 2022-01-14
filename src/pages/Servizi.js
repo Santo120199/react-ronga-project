@@ -9,22 +9,62 @@ const Servizi = () => {
     <Wrapper className='page'>
       <div className='section-center'>
         <h1 className='title'>I NOSTRI SERVIZI</h1>
-        <hr className='line' />
-        {services.map((service, index) => {
-          const { image, title, text } = service
-          return <Servizio key={index} servizio={service} />
-        })}
+        <p className='descr'>
+          Per la cura del patrimonio artistico e culturale sono richieste
+          qualificazioni speciali. Grazie alla nostra esperienza e al nostro
+          gruppo di esperti, negli anni abbiamo acquisito prestigiose
+          certificazioni che ci permettono offrire i nostri servizi.
+        </p>
+        <div className='link'>
+          <Link to='/certificazioni'>Vedi le certificazioni</Link>
+        </div>
+        <div className='servizi'>
+          <hr className='line' />
+          {services.map((service, index) => {
+            const { image, title, text } = service
+            return <Servizio key={index} servizio={service} />
+          })}
+        </div>
       </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
-  .empty {
+  display: flex;
+  .descr {
     text-align: center;
-    h2 {
-      margin-bottom: 1rem;
-      text-transform: none;
+    align-items: left;
+    font-family: Gotham-Book;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .link {
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: Gotham-Medium;
+  }
+
+  .servizi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 424px) {
+    .descr {
+      margin: 0;
+      font-size: 14px;
+    }
+    .link {
+      font-size: 14px;
     }
   }
 `

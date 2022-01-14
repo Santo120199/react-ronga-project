@@ -1,7 +1,5 @@
-import axios from 'axios'
 import React, { useContext, useEffect, useReducer } from 'react'
 import reducer from '../reducers/products_reducer'
-import { products_url as url } from '../utils/constants'
 import data from '../data'
 import {
   SIDEBAR_OPEN,
@@ -90,6 +88,7 @@ export const ProductsProvider = ({ children }) => {
   }
 
   useEffect(() => {
+    // eslint-disable-next-lines
     fetchLavori(data)
   }, [])
 

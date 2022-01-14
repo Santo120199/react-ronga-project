@@ -78,13 +78,15 @@ import VillaRufolo5 from './assets/Villa Rufolo/VillaRufolo 5.jpg'
 import VillaRufolo6 from './assets/Villa Rufolo/VillaRufolo 6.jpg'
 import VillaRufolo7 from './assets/Villa Rufolo/VillaRufolo 7.png'
 import VillaRufolo8 from './assets/Villa Rufolo/VillaRufolo 8.png'
-
-/*Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Impedit a praesentium, sunt voluptatum doloribus omnis incidunt laudantium, 
-fugit id, molestias quam natus molestiae libero aperiam quidem ullam aspernatur
- hic sequi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit a 
- praesentium, sunt voluptatum doloribus omnis incidunt laudantium, fugit id, molestias 
- quam natus molestiae libero aperiam quidem ullam aspernatur hic sequi?*/
+import SindoneCopertina from './assets/Cappella Sindone/Sindone Copertina.jpg'
+import Sindone1 from './assets/Cappella Sindone/Sindone 1.jpg'
+import Sindone2 from './assets/Cappella Sindone/Sindone 2.jpg'
+import Sindone3 from './assets/Cappella Sindone/Sindone 3.jpg'
+import Sindone4 from './assets/Cappella Sindone/Sindone 4.jpg'
+import Sindone5 from './assets/Cappella Sindone/Sindone 5.jpg'
+import Sindone6 from './assets/Cappella Sindone/Sindone 6.jpg'
+import Sindone7 from './assets/Cappella Sindone/Sindone 7.jpg'
+import Sindone8 from './assets/Cappella Sindone/Sindone 8.png'
 
 export default [
   {
@@ -96,16 +98,17 @@ export default [
       slug: 'Chiesa della SS. Annunziata',
       type: 'restauro',
       anno: 2011,
-      citta: 'Salerno',
+      citta: 'salerno',
       provinciaSigla: 'SA',
       regione: 'campania',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Salerno',
       categoria: 'OG2 - 0S6',
       featured: true,
       storia:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        "Costruita nel 1627, si erge al di sopra della vecchia chiesa quattrocentesca distrutta da un'alluvione nel 1627. Il nuovo impianto ecclesiastico fu edificato in sostituzione della Santissima Annunziata Vecchia o Extra Moenia. La Chiesa attuale è il risultato di interventi di restauro di inizio Settecento ad opera di Fernando Sanfelice, al quale si deve la progettazione del monumentale campanile Barocco, che sorgeva di fianco alla scomparsa Porta Catena.",
       restauro:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe vel aliquam, eveniet aut nesciunt? Totam quam obcaecati officia earum, explicabo quas, debitis molestias error architecto sint, dolorum quos reprehenderit!',
+        "I numerosi lavori di Restauro hanno consentito di operare lo scavo archeologico al di sotto della pavimentazione della navata centrale. Si è operato alla ricostruzione di tutte le coperture con capriate in legno lamellare. Per il recupero della cupola sono state utilizzate delle ambrogette in ceramica vietrese, per ripristinarne l'immagine originale",
       images: [
         {
           fields: {
@@ -182,9 +185,10 @@ export default [
       slug: 'Duomo di Salerno',
       type: 'restauro',
       anno: 2010,
-      citta: 'Salerno',
+      citta: 'salerno',
       provinciaSigla: 'SA',
       regione: 'campania',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Salerno',
       categoria: 'OG2 - 0S6',
       featured: true,
@@ -271,6 +275,7 @@ export default [
       citta: 'Padula',
       provinciaSigla: 'SA',
       regione: 'campania',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Salerno',
       categoria: 'OG2 - 0S6',
       featured: false,
@@ -357,6 +362,7 @@ export default [
       citta: 'Leporano',
       provinciaSigla: 'TA',
       regione: 'Puglia',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Taranto',
       categoria: 'OG2 - 0S6',
       featured: false,
@@ -443,13 +449,14 @@ export default [
       citta: 'Lecce',
       provinciaSigla: 'LE',
       regione: 'Puglia',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Lecce',
       categoria: 'OG2 - 0S6',
       featured: false,
       storia:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'La struttura è l’unico esempio di architettura civile ospedaliera del rinascimento a Lecce. Costruito nel 1392, poi quasi del tutto abbattuto per essere successivamente ricostruito nel 1548 per le pessime condizioni di degrado in cui versava. Situato di fianco alla Porta Rudiae, fu prima ospedale e poi deposito per la manifattura tabacchi. L’orologio in facciata risale al XIX secolo. ',
       restauro:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe vel aliquam, eveniet aut nesciunt? Totam quam obcaecati officia earum, explicabo quas, debitis molestias error architecto sint, dolorum quos reprehenderit!',
+        "II Restauro ha permesso la valorizzazione del complesso e il ripristino della fruibilità del bene. Gli interventi hanno interessato il recupero dell'intera Cappella Barocca, dalle cui pavimentazioni sono sorte delle rovine archeologiche. Le operazioni hanno previsto, oltretutto, la riabilitazione strutturale delle volte costituenti i saloni, il Restauro dell'orologio e dell'antico organo Settecentesco e la relativa Cantoria.",
       images: [
         {
           fields: {
@@ -529,13 +536,14 @@ export default [
       citta: 'Milano',
       provinciaSigla: 'MI',
       regione: 'Lombardia',
+      zonaItalia: 'nord',
       commitente: 'Sovrintendenza di Milano',
       categoria: 'OG2 - 0S6',
       featured: false,
       storia:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'Palazzo Citterio è un edificio risalente al 1764. Dopo moltissimi decenni di abbandono, nel 1972 lo Stato acquisì questo bene e in seguito ad una serie di valutazioni ed ipotesi progettuali per la ristrutturazione dell’immobile, si decise di procedere con i lavori poi conclusi nell’Aprile del 2018. Il Palazzo è fortemente caratterizzato dal dialogo tra l’architettura settecentesca e un intervento della fine del novecento',
       restauro:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe vel aliquam, eveniet aut nesciunt? Totam quam obcaecati officia earum, explicabo quas, debitis molestias error architecto sint, dolorum quos reprehenderit!',
+        "E' stato effettuato il Restauro delle facciate, del porticato che conduce al giardino e all’Orto Botanico e dei diversi ambienti che lo compongono. Per i diversi livelli dell’edificio si è operato, per quanto possibile, in maniera conservativa nei confronti dell’arredo e degli interni originali. Questa architettura, definita del Barocchetto Milanese, è stata sobriamente unita alla progettazione innovativa di ultima generazione per quanto concerne impianti e strutture.",
       images: [
         {
           fields: {
@@ -608,20 +616,21 @@ export default [
       id: '7',
     },
     fields: {
-      name: "Chiesa di Sant'Antonio",
-      slug: "Chiesa di Sant'Antonio",
+      name: "Convento di Sant'Antonio",
+      slug: "Convento di Sant'Antonio",
       type: 'restauro',
       anno: 2012,
       citta: 'Taranto',
       provinciaSigla: 'TA',
       regione: 'Puglia',
+      zonaItalia: 'sud',
       commitente: 'Sovrintendenza di Taranto',
       categoria: 'OG2 - 0S6',
       featured: false,
       storia:
-        'Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.',
+        'L’ex convento di Sant’Antonio, edificato al di sopra di uno scavo archeologico di notevole importanza per i ritrovamenti avvenuti nel sito, è annoverato tra i gioielli dell’architettura sacra di Taranto. Fu eretto nel XV secolo, e nel corso dei secoli è stato oggetto di innumerevoli trasformazioni, quali abbattimenti di mura e trasformazione dell’assetto originario del complesso, dovute ai diversi ordini ed enti che lo ebbero in gestione. Dopo i lavori di restauro, riabilitazione e valorizzazione del bene, il convento è oggi sede tarantina della Croce Rossa Italiana e di alcuni uffici della Soprintendenza dei Beni Architettonici. ',
       restauro:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique saepe vel aliquam, eveniet aut nesciunt? Totam quam obcaecati officia earum, explicabo quas, debitis molestias error architecto sint, dolorum quos reprehenderit!',
+        'Il progetto di restauro e di funzionalizzazione si poneva come obiettivi quello di valorizzare, sia dal punto di vista urbanistico che dal punto di vista edilizio, l’intero compendio Demaniale; di riorganizzare e rendere nuovamente funzionali i diversi archivi e depositi presenti nella struttura; di adeguare i locali di lavoro secondo la normativa vigente in materia di sicurezza e salute dei lavoratori. ',
       images: [
         {
           fields: {
@@ -693,7 +702,8 @@ export default [
       anno: 2019,
       citta: 'Ravello',
       provinciaSigla: 'SA',
-      regione: 'Campania',
+      regione: 'campania',
+      zonaItalia: 'sud',
       commitente: 'Villa Rufolo',
       categoria: 'OG2 - 0S6',
       featured: false,
@@ -779,7 +789,8 @@ export default [
       anno: 2018,
       citta: 'Ravello',
       provinciaSigla: 'SA',
-      regione: 'Campania',
+      zonaItalia: 'sud',
+      regione: 'campania',
       commitente: 'Villa Rufolo',
       categoria: 'OG2 - 0S6',
       featured: true,
@@ -848,6 +859,93 @@ export default [
           fields: {
             file: {
               url: VillaRufolo8,
+            },
+          },
+        },
+      ],
+    },
+  },
+  {
+    sys: {
+      id: '10',
+    },
+    fields: {
+      name: 'Cappella della Sacra Sindone',
+      slug: 'Cappella della Sacra Sindone',
+      type: 'restauro',
+      anno: 2018,
+      citta: 'Torino',
+      provinciaSigla: 'TO',
+      zonaItalia: 'nord',
+      regione: 'Piemonte',
+      commitente: 'Sovrintendenza Torino',
+      categoria: 'OG2 - 0S6',
+      featured: true,
+      storia:
+        'La Cappella della Sindone è stata realizzata a partire dal 1611 per ospitare l’omonima reliquia. Annoverata tra gli esempi più rilevanti del Barocco italiano è stata progettata dal padre teatino Guarino Guarini, discepolo di Francesco Borromini. Nell’Aprile 1997 un devastante incendio colpì la Cappella causando ingenti danni sugli elementi al suo interno. Dopo un lungo cantiere di Restauro, è stata riaperta al pubblico nell’autunno del 2018.',
+      restauro:
+        "Successivamente ad un'accurata fase di valutazione delle resistenze residue della struttura, si è proceduto con la riabilitazione strutturale. L'ultimazione dei lavori è avvenuta con il ripristino dei numerosi infissi, delle balaustre e dei grandi finestroni lignei presenti all'interno della Cappella, oltre che con il ripristino degli intonaci, degli stucchi e di tutti gli elementi lapidei danneggiati a causa del terribile incendio. ",
+      images: [
+        {
+          fields: {
+            file: {
+              url: SindoneCopertina,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone1,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone2,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone3,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone4,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone5,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone6,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone7,
+            },
+          },
+        },
+        {
+          fields: {
+            file: {
+              url: Sindone8,
             },
           },
         },

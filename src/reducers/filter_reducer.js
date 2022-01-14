@@ -1,9 +1,5 @@
 import {
   LOAD_PRODUCTS,
-  SET_LISTVIEW,
-  SET_GRIDVIEW,
-  UPDATE_SORT,
-  SORT_PRODUCTS,
   UPDATE_FILTERS,
   FILTER_PRODUCTS,
   CLEAR_FILTERS,
@@ -27,11 +23,23 @@ const filter_reducer = (state, action) => {
 
   if (action.type === FILTER_PRODUCTS) {
     const { all_lavori } = state
-    const { type } = state.filters
+    const { type, citta, regione, zonaItalia } = state.filters
     let tempLav = [...all_lavori]
 
     if (type !== 'tutti') {
       tempLav = tempLav.filter((lav) => lav.type === type)
+    }
+    console.log(citta)
+    if (citta !== 'Italia') {
+      tempLav = tempLav.filter((lav) => lav.citta === citta)
+    }
+
+    if (regione !== 'tutti') {
+      tempLav = tempLav.filter((lav) => lav.regione === regione)
+    }
+
+    if (zonaItalia !== 'tutti') {
+      tempLav = tempLav.filter((lav) => lav.zonaItalia === zonaItalia)
     }
 
     return { ...state, filtered_lavori: tempLav }

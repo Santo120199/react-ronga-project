@@ -1,8 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
 import styled from 'styled-components'
 import { LavoriList, Filters } from '../components'
 
 const Lavori = () => {
+  const { citta } = useParams()
+
   return (
     <main>
       <Wrapper className='page'>
@@ -10,7 +13,7 @@ const Lavori = () => {
           <h1 className='title'>I NOSTRI LAVORI</h1>
           <hr className='line' />
           <Filters />
-          <LavoriList />
+          <LavoriList citta={citta} />
         </div>
       </Wrapper>
     </main>

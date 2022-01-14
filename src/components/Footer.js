@@ -8,11 +8,11 @@ const Footer = () => {
     <Wrapper>
       <footer className='footer'>
         <div className='container'>
-          <div className='log'>
-            <img src={logo} alt='' />
-          </div>
           <div className='row'>
-            <div className='footer-col da'>
+            <div className='logo'>
+              <img src={logo} alt='' />
+            </div>
+            <div className=''>
               <h4>CONTATTI</h4>
               <p>
                 info@impresaronga.com
@@ -24,7 +24,7 @@ const Footer = () => {
                 089 233496
               </p>
             </div>
-            <div className='footer-col da'>
+            <div className=''>
               <h4>SEDE LEGALE</h4>
               <p>
                 Via Bastia 2, 85125
@@ -32,15 +32,15 @@ const Footer = () => {
                 Salerno (SA) - Italy
               </p>
             </div>
-            <div className='footer-col da'>
+            <div className=''>
               <h4>DOWNLOAD</h4>
               <p>
                 <a href={Brochure}>Brochure</a>
                 <br />
-                <a href=''>Area Stampa</a>
+                <a href='#'>Area Stampa</a>
               </p>
             </div>
-            <div className='footer-col da'>
+            <div className=''>
               <h4>SOCIAL</h4>
               <p className='social'>
                 <a href='https://www.instagram.com/salvatore_ronga_srl/?utm_source=ig_profile_share&igshid=174q4l23lnw74'>
@@ -86,25 +86,26 @@ const Wrapper = styled.footer`
     padding-top: 40px;
     padding-bottom: 10px;
     margin-left: 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
   }
 
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
   }
 
   .footer-col {
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
+    text-aling: left;
   }
 
-  .log img {
-    width: 250px;
+  .logo {
+    margin-top: -50px;
+  }
+
+  .logo img {
+    width: 200px;
     padding: 0;
     margin: 0;
   }
@@ -142,28 +143,21 @@ const Wrapper = styled.footer`
   }
 
   @media screen and (min-width: 320px) and (max-width: 425px) {
-    .container {
+    .row {
       grid-template-columns: repeat(1, 1fr);
+      text-align: center;
     }
 
-    .log img {
+    .logo img {
       width: 150px;
+      margin-left: -20px;
     }
 
-    .footer-col {
-      width: 100%;
-      margin-bottom: 10px;
+    .row h4 {
+      font-size: 16px;
     }
-    .da {
-      margin-left: 0;
-      padding-bottom: 5px;
-    }
-
-    .footer-col h4 {
-      font-size: 18px;
-    }
-    .footer-col p {
-      font-size: 14px;
+    .row p {
+      font-size: 12px;
     }
     .bar p {
       font-size: 18px;
@@ -171,54 +165,34 @@ const Wrapper = styled.footer`
   }
 
   @media screen and (min-width: 426px) and (max-width: 800px) {
-    .container {
-      grid-template-columns: repeat(2, 0.5fr);
-    }
-
-    .log img {
-      width: 150px;
-    }
-
-    .footer-col {
-      width: 100%;
-      padding: 20px;
+    .row {
+      grid-template-columns: repeat(1, 1fr);
       text-align: center;
+    }
+
+    .logo img {
+      width: 150px;
+      margin-left: -20px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    .row {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+
+    .row div {
+      margin-bottom: 30px;
     }
   }
 
   @media screen and (min-width: 801px) and (max-width: 1023px) {
-    .container {
-      max-width: 1024px;
+    .row {
+      grid-template-columns: repeat(3, 1fr);
       text-align: center;
-    }
-    .footer-col {
-      width: 50%;
     }
   }
 `
-
-/* const Wrapper = styled.footer`
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--clr-black);
-  text-align: center;
-  span {
-    color: var(--clr-primary-5);
-  }
-  h5 {
-    color: var(--clr-white);
-    margin: 0.1rem;
-
-    font-weight: 400;
-    text-transform: none;
-    line-height: 1.25;
-  }
-  @media (min-width: 776px) {
-    flex-direction: row;
-  }
-` */
 
 export default Footer

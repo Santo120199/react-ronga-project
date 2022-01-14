@@ -14,11 +14,13 @@ const Società = () => {
 
         <h2 className='pretitle pretitle-pers'>LA NOSTRA STORIA</h2>
         <p className='text text-pers'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-          asperiores quae aut? Nemo quas quisquam laudantium quis dolorem cum
-          quos perferendis, et aspernatur ullam modi dolores adipisci,
-          voluptatibus in atque officia labore ratione, magnam non praesentium
-          reiciendis voluptas dolore sit.
+          Operiamo nel settore del Restauro Monumentale dagli inizi del 1900 e
+          durante la Seconda Guerra Mondiale abbiamo contribuito alla
+          realizzazione di opere di protezione dai bombardamenti di alcuni dei
+          monumenti più importanti della Regione Campania. Con la stessa
+          passione dalla fondazione, oggi il nostro gruppo segue il committente
+          in tutti i processi dei lavori: progettazione, realizzazione e
+          manutenzione, oltre che la comunicazione innovativa degli interventi.
         </p>
 
         <hr className='line l-soc' />
@@ -26,11 +28,10 @@ const Società = () => {
           <div className='info1'>
             <h2 className='pretitle pretitle-pers'>LA MISSION</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-              omnis odit hic numquam quibusdam perspiciatis modi architecto
-              ratione sint possimus quis ducimus veniam labore quos praesentium
-              enim ex eligendi nobis rerum voluptates quasi maiores, doloremque
-              cumque. Neque soluta architecto porro.
+              Il nostro desiderio è quello di essere un punto di riferimento per
+              il Restauro e la Valorizzazione dei Beni Culturali. Passione,
+              Qualità e Innovazione: questo ci permette di salvaguardare il
+              nostro Patrimonio
             </p>
           </div>
           <hr className='line-vertical line-soc' />
@@ -38,11 +39,12 @@ const Società = () => {
           <div className='info1'>
             <h2 className='pretitle pretitle-pers'>IL TEAM</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              soluta, quos velit ratione quam quisquam iusto voluptatem saepe
-              laboriosam optio dolore consequatur laborum ipsum. Repudiandae
-              iure dolore sint? Tenetur quisquam nam laboriosam! Fugiat placeat
-              sequi unde tempora, laudantium animi rerum.
+              Ogni progetto è seguito interamente dalle nostre risorse interne.
+              Negli anni, lavorando in tutto il territorio italiano, abbiamo
+              instaurato sinergie con gruppi e professionisti che condividono i
+              nostri stessi valori. Questo ci permette di avere una presenza
+              capillare sul territorio mantenendo il contatto diretto con ogni
+              singola opera.
             </p>
           </div>
         </div>

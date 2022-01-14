@@ -1,15 +1,6 @@
 import React, { useEffect, useContext, useReducer } from 'react'
 import reducer from '../reducers/filter_reducer'
-import {
-  LOAD_PRODUCTS,
-  SET_GRIDVIEW,
-  SET_LISTVIEW,
-  UPDATE_SORT,
-  SORT_PRODUCTS,
-  UPDATE_FILTERS,
-  FILTER_PRODUCTS,
-  CLEAR_FILTERS,
-} from '../actions'
+import { LOAD_PRODUCTS, UPDATE_FILTERS, FILTER_PRODUCTS } from '../actions'
 import { useProductsContext } from './products_context'
 
 const initialState = {
@@ -18,6 +9,9 @@ const initialState = {
   filters: {
     categoria: 'tutti',
     type: 'tutti',
+    citta: 'Italia',
+    regione: 'tutti',
+    zonaItalia: 'tutti',
   },
 }
 
@@ -28,12 +22,14 @@ export const FilterProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   useEffect(() => {
+    // eslint-disable-next-line
     dispatch({ type: LOAD_PRODUCTS, payload: lavori })
   }, [lavori])
 
   useEffect(() => {
+    // eslint-disable-next-line
     dispatch({ type: FILTER_PRODUCTS })
-  }, [, lavori, state.filters])
+  }, [lavori, state.filters])
 
   const updateFilters = (e) => {
     let name = e.target.name
@@ -42,6 +38,17 @@ export const FilterProvider = ({ children }) => {
     console.log(value)
 
     if (name === 'type') {
+      value = e.target.textContent
+    }
+    if (name === 'citta') {
+      value = e.target.textContent
+    }
+
+    if (name === 'regione') {
+      value = e.target.textContent
+    }
+
+    if (name === 'zonaItalia') {
       value = e.target.textContent
     }
 
