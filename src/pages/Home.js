@@ -19,7 +19,9 @@ const Home = () => {
         </div>
       </section>
       <section className='page-100'>
-        <Servizi />
+        <div className='section-center'>
+          <Servizi />
+        </div>
         <div className='section sec'>
           <div className='section-center centrale'>
             <div className='preSfondo'>
@@ -106,7 +108,6 @@ const Wrapper = styled.section`
   }
 
   .preSfondo {
-    margin-left: 20px;
   }
 
   .preSfondo img {
@@ -123,6 +124,8 @@ const Wrapper = styled.section`
     text-align: center;
     font-family: Libre-Baskerville;
     font-size: 18px;
+    margin-right: 50px;
+    margin-left: -50px;
   }
 
   .sfondo span {

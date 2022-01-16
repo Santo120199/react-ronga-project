@@ -5,7 +5,7 @@ import Servizio from './Servizio'
 
 const Servizi = () => {
   return (
-    <Wrapper className='section-center'>
+    <Wrapper>
       <h1 className='titolo'>Servizi</h1>
       <div className='serviziHome'>
         {services.slice(0, 3).map((servizio, index) => {
@@ -25,16 +25,31 @@ const Wrapper = styled.section`
     letter-spacing: 5px;
   }
   .serviziHome {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    gap: 2rem 1.5rem;
+    justify-items: center;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 424px) {
+  @media screen and (min-width: 320px) and (max-width: 599px) {
+    .serviziHome {
+      grid-template-columns: repeat(1, 0fr);
+      justify-content: center;
+    }
     .titolo {
       font-size: 25px;
       margin-top: -20px;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 992px) {
+    .serviziHome {
+      grid-template-columns: repeat(2, 0fr);
+    }
+  }
+
+  @media (min-width: 993px) {
+    .serviziHome {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `

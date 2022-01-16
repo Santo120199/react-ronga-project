@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min'
 import styled from 'styled-components'
 import { LavoriList, Filters } from '../components'
+import { useFilterContext } from '../context/filter_context'
 
 const Lavori = () => {
   const { citta } = useParams()
+
+  const { clearFilter } = useFilterContext()
+
+  useEffect(() => {
+    clearFilter()
+  }, [])
 
   return (
     <main>

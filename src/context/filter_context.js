@@ -1,6 +1,11 @@
 import React, { useEffect, useContext, useReducer } from 'react'
 import reducer from '../reducers/filter_reducer'
-import { LOAD_PRODUCTS, UPDATE_FILTERS, FILTER_PRODUCTS } from '../actions'
+import {
+  LOAD_PRODUCTS,
+  UPDATE_FILTERS,
+  FILTER_PRODUCTS,
+  CLEAR_FILTERS,
+} from '../actions'
 import { useProductsContext } from './products_context'
 
 const initialState = {
@@ -55,8 +60,12 @@ export const FilterProvider = ({ children }) => {
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } })
   }
 
+  const clearFilter = () => {
+    dispatch({ type: CLEAR_FILTERS })
+  }
+
   return (
-    <FilterContext.Provider value={{ ...state, updateFilters }}>
+    <FilterContext.Provider value={{ ...state, updateFilters, clearFilter }}>
       {children}
     </FilterContext.Provider>
   )

@@ -275,7 +275,7 @@ export default [
       citta: 'Padula',
       provinciaSigla: 'SA',
       regione: 'campania',
-      zonaItalia: 'sud',
+      zonaItalia: 'centro',
       commitente: 'Sovrintendenza di Salerno',
       categoria: 'OG2 - 0S6',
       featured: false,

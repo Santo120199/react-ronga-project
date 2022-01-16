@@ -45,6 +45,18 @@ const filter_reducer = (state, action) => {
     return { ...state, filtered_lavori: tempLav }
   }
 
+  if (action.type === CLEAR_FILTERS) {
+    return {
+      ...state,
+      filters: {
+        categoria: 'tutti',
+        type: 'tutti',
+        citta: 'Italia',
+        regione: 'tutti',
+        zonaItalia: 'tutti',
+      },
+    }
+  }
   throw new Error(`No Matching "${action.type}" - action type`)
 }
 
