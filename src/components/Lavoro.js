@@ -32,15 +32,18 @@ const Wrapper = styled.article`
     transition: var(--transition);
   }
   .descr {
-    font-family: Gotham-Medium;
-    letter-spacing: 2px;
+    font-family: Gotham-Book;
+    letter-spacing: 0px;
     font-size: 14px;
     word-wrap: break-word;
     margin-top: 1rem;
     max-width: 300px;
+    text-transform: capitalize;
   }
   .nome {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: Gotham-Medium;
+    font-weight: bold;
   }
 
   @media screen and (min-width: 320px) and (max-width: 768px) {

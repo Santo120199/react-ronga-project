@@ -42,12 +42,13 @@ const Wrapper = styled.section`
     width: 110px;
   }
 
+
   .titleHome {
     text-align: center;
-    font-family: Libre-Baskerville;
+    font-family: Libre-Baskerville-Bold;
     font-size: 35px;
     font-weight: 500;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
     margin-top: 20px;
   }

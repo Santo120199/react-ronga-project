@@ -17,17 +17,19 @@ const Servizi = () => {
 }
 
 const Wrapper = styled.section`
+  margin-top: -40px;
   .titolo {
     text-align: center;
-    font-family: Libre-Baskerville;
+    font-family: Libre-Baskerville-Bold;
     font-size: 35px;
     font-weight: 500;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
   .serviziHome {
     display: grid;
     gap: 2rem 1.5rem;
     justify-items: center;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 599px) {

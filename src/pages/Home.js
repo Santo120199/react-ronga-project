@@ -12,10 +12,6 @@ const Home = () => {
           <h1 className='title'>
             Curiamo il nostro <br /> patrimonio
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur <br /> adipisicing elit.
-            Neque, nesciunt.
-          </p>
         </div>
       </section>
       <section className='page-100'>
@@ -31,7 +27,7 @@ const Home = () => {
             <div className='sfondo'>
               <p>
                 Il nostro desiderio è quello di essere un punto di riferimento
-                per il Restauro e la Valorizzazione dei Beni Culturali. <br />
+                per il Restauro e la Valorizzazione dei Beni Culturali. <br /><br/>
                 <span>Passione, Qualità e Innovazione</span> <br />
                 Questo ci permette di salvaguardare il nostro Patrimonio
               </p>
@@ -91,7 +87,7 @@ const Wrapper = styled.section`
   .sec {
     background: repeating-linear-gradient(
       rgb(123, 27, 2, 0.6),
-      rgb(123, 27, 2, 0.6) 49.9%,
+      rgb(123, 27, 2, 0.6) 60.9%,
       var(--background) 50.1%,
       var(--background) 100%
     );
@@ -112,7 +108,7 @@ const Wrapper = styled.section`
 
   .preSfondo img {
     width: 300px;
-    height: 500px;
+    height: 400px;
     margin-left: 40px;
   }
 
@@ -124,8 +120,8 @@ const Wrapper = styled.section`
     text-align: center;
     font-family: Libre-Baskerville;
     font-size: 18px;
-    margin-right: 50px;
-    margin-left: -50px;
+    margin-right: -40px;
+    margin-left: -30px;
   }
 
   .sfondo span {

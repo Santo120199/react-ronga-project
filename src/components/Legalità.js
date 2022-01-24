@@ -20,6 +20,9 @@ const Legalità = () => {
 }
 
 const Wrapper = styled.section`
+  .cat-descr {
+    font-family: Libre-Baskerville !important;
+  }
   @media screen and (min-width: 320px) and (max-width: 374px) {
     .cat-rating {
       display: flex;

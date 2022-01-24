@@ -113,7 +113,7 @@ const Wrapper = styled.section`
   .cat-descr {
     text-align: center;
     align-items: left;
-    font-family: Gotham-Book;
+    font-family: Libre-Baskerville !important;
     font-size: 18px;
     margin-top: -25px;
     margin-bottom: 50px;
@@ -139,9 +139,9 @@ const Wrapper = styled.section`
     margin-bottom: 30px;
   }
   .skill-name span {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: normal;
-    font-family: Gotham-Book;
+    font-family: Libre-Baskerville;
   }
   .skill-bar {
     height: 20px;

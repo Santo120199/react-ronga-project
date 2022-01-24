@@ -9,7 +9,7 @@ import Iso9001 from '../assets/certificati/ISO-9001.jpg'
 const Certificati = () => {
   return (
     <Wrapper>
-      <h1 className='title'>SCARICALI QUI</h1>
+      <h1 className='cat'>SCARICALI QUI</h1>
       <div className='certificati'>
         <div className='certificato'>
           <a href={rating}>

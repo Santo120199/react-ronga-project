@@ -49,13 +49,16 @@ const Wrapper = styled.section`
 
   .servizi p {
     font-size: 12px;
+    font-family: Libre-Baskerville;
+   font-weight: 400;
   }
 
   .servizi button {
-    margin-top: 10px;
-    background: rgb(123, 27, 2, 0.8);
+    margin-top: 1rem;
+    background: rgb(123, 27, 2, 0.6);
     padding: 5px 20px;
     font-size: 14px;
+    font-weight: bold;
     border: none;
   }
 

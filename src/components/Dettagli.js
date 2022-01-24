@@ -11,18 +11,18 @@ const Dettagli = ({ lavoro }) => {
         <h2 id='intestazione'>Dettagli</h2>
         <hr className='linea' />
         <p>
-          ANNO <br />
+          Anno <br />
           <span>{anno}</span> <br />
-          LUOGO <br />
+          Luogo <br />
           <span>
             {citta} {provinciaSigla}
           </span>
         </p>
         <hr className='linea' />
         <p>
-          COMMITENTE <br />
+          Committente <br />
           <span>{commitente} </span> <br />
-          CATEGORIA <br />
+          Categoria <br />
           <span>{categoria}</span>
         </p>
       </div>
@@ -40,12 +40,20 @@ const Wrapper = styled.section`
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+
   }
 
   .info p {
     padding-left: 50px;
     font-family: Gotham-Book;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .info p span {
+    font-weight: initial;
+    text-transform: capitalize;
+    font-size: 16px;
   }
 
   .line-vertical {
@@ -65,14 +73,13 @@ const Wrapper = styled.section`
   }
 
   .info-pers hr {
-    margin-left: 100px;
+    margin-left: 140px;
   }
 
   .info-pers span {
     font-size: 18px;
   }
   #intestazione {
-    margin-left: 100px;
     text-transform: uppercase;
     margin-right: 200px;
     font-family: Gotham-Medium;

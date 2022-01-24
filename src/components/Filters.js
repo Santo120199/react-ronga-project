@@ -36,6 +36,7 @@ const Filters = () => {
 }
 
 const Wrapper = styled.section`
+  margin-bottom: 30px;
   .filtro {
     display: flex;
 

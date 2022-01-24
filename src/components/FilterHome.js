@@ -37,29 +37,35 @@ const FilterHome = () => {
 }
 
 const Wrapper = styled.section`
+  margin-top: -40px;
   .filtro {
     margin-bottom: 20px;
   }
 
   .titleHome {
     text-align: center;
-    font-family: Libre-Baskerville;
+    font-family: Libre-Baskerville-Bold;
     font-size: 35px;
     font-weight: 500;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
   }
 
   .filtro-btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
   .filtro button {
     background: rgb(123, 27, 2, 0.6);
-    padding: 10px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
     border: none;
     margin-left: 20px;
-    font-family: Gotham-Book;
+    font-family: Gotham-Medium;
+    letter-spacing: 2px;
     font-size: 20px;
     cursor: pointer;
     text-transform: capitalize;

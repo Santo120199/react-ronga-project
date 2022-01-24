@@ -40,16 +40,17 @@ const Lavoro = () => {
 
 const Wrapper = styled.main`
   .titleCap {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Libre-Baskerville !important;
   }
 
   .main-work {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 120px;
     width: 100%;
-    margin-top: 50px;
     margin-bottom: 50px;
   }
   .main-work img {
@@ -65,10 +66,9 @@ const Wrapper = styled.main`
 
   .main-text p {
     justify-content: center;
-    margin-right: 150px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
-    font-family: Gotham-Book;
+    font-family: Libre-Baskerville;
     margin-bottom: 20px;
   }
   .storia {

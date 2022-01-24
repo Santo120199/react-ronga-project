@@ -35,8 +35,8 @@ const Wrapper = styled.main`
   .descr {
     text-align: center;
     align-items: left;
-    font-family: Gotham-Book;
-    font-size: 18px;
+    font-family: Libre-Baskerville;
+    font-size: 15px;
     margin-left: 100px;
     margin-right: 100px;
   }

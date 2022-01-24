@@ -46,6 +46,11 @@ const Wrapper = styled.section`
     font-size: 14px;
     padding-top: -30px;
     display: block;
+    font-family: Libre-Baskerville !important;
+  }
+
+  .cat-descr {
+    font-family: Libre-Baskerville !important;
   }
 `
 
