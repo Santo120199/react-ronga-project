@@ -39,7 +39,6 @@ const Wrapper = styled.section`
   margin-bottom: 30px;
   .filtro {
     display: flex;
-
     margin-bottom: 20px;
     justify-content: center;
   }

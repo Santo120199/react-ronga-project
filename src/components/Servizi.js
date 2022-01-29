@@ -27,7 +27,7 @@ const Wrapper = styled.section`
   }
   .serviziHome {
     display: grid;
-    gap: 2rem 1.5rem;
+    
     justify-items: center;
     margin-bottom: 30px;
   }

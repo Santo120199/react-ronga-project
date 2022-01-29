@@ -63,7 +63,8 @@ const Wrapper = styled.section`
     padding-left: 35px;
     padding-right: 35px;
     border: none;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-family: Gotham-Medium;
     letter-spacing: 2px;
     font-size: 20px;
@@ -78,7 +79,7 @@ const Wrapper = styled.section`
 
   @media screen and (min-width: 320px) and (max-width: 424px) {
     .filtro {
-      margin-top: 20px;
+      margin-top: 60px;
     }
     .filtro-btn {
       display: flex;
@@ -88,7 +89,7 @@ const Wrapper = styled.section`
     }
 
     .filtro button {
-      padding: 5px;
+      padding: 10px;
       margin-bottom: 5px;
       font-size: 16px;
     }

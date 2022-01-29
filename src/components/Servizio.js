@@ -63,11 +63,11 @@ const Wrapper = styled.section`
   }
 
   @media screen and (min-width: 320px) and (max-width: 424px) {
-    width: 250px !important;
-    max-width: 250px;
+    width: 300px !important;
+    max-width: 300px;
     img {
-      width: 250px;
-      height: 200px !important;
+      width: 300px;
+      height: 250px !important;
     }
     .servizi h1 {
       font-size: 14px;

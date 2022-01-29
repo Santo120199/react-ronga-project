@@ -73,6 +73,7 @@ const Wrapper = styled.footer`
   align-items: center;
   justify-content: center;
   border-top: 1px solid black;
+  margin-top: -20px;
   .footer {
     background-color: #f7f6f2;
     font-family: Gotham-Book;
@@ -143,6 +144,7 @@ const Wrapper = styled.footer`
   }
 
   @media screen and (min-width: 320px) and (max-width: 425px) {
+    margin-top: -35px;
     .row {
       grid-template-columns: repeat(1, 1fr);
       text-align: center;

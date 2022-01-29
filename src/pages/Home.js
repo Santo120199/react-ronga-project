@@ -137,7 +137,7 @@ const Wrapper = styled.section`
       letter-spacing: 3px;
     }
     .text p {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     .sec {
@@ -157,6 +157,8 @@ const Wrapper = styled.section`
     .sfondo p {
       font-size: 14px;
       letter-spacing: 2px;
+      margin-top: -25px;
+      margin-bottom: -25px;
     }
     .centrale {
       justify-content: center;

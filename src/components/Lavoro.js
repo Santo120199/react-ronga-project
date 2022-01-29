@@ -48,7 +48,7 @@ const Wrapper = styled.article`
 
   @media screen and (min-width: 320px) and (max-width: 768px) {
     img {
-      width: 250px;
+      width: 300px;
       height: 250px !important;
     }
     .descr {
