@@ -15,7 +15,7 @@ const GridView = ({ lavori }) => {
 }
 
 const Wrapper = styled.section`
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   img {
     height: 175px;
   }
@@ -27,6 +27,7 @@ const Wrapper = styled.section`
   }
 
   @media screen and (min-width: 320px) and (max-width: 599px) {
+    margin-bottom: 60px;
     .products-container {
       grid-template-columns: repeat(1, 0fr);
       justify-content: center;

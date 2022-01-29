@@ -8,7 +8,7 @@ const Società = () => {
       <Wrapper className='page-100 section-center'>
         <h2 className='pretitle'>DAGLI ANNI '40</h2>
         <h1 className='title title-soc' id='mobile-soc'>
-          Operiamo per restituire <br /> la storia ai nostri figli
+          La Cura Del Nostro Patrimonio
         </h1>
         <img src={fotoSocietà} alt='foto società' id='fotosocietà' />
 
@@ -66,7 +66,7 @@ const Wrapper = styled.section`
   .pretitle {
     text-align: center;
     align-items: center;
-    font-family: Gotham-Book;
+    font-family: Gotham-Medium;
     font-size: 20px;
     letter-spacing: 5px;
     margin-top: -40px;
@@ -134,6 +134,10 @@ const Wrapper = styled.section`
       font-size: 30px;
     }
 
+    .text {
+      margin-bottom: 3rem;
+    }
+
     #fotosocietà {
       width: 300px;
       height: 250px;
@@ -185,6 +189,14 @@ const Wrapper = styled.section`
       font-size: 30px;
     }
 
+    .text {
+      margin-bottom: 3rem;
+    }
+
+    .line {
+      margin-bottom: 0;
+    }
+
     #fotosocietà {
       width: 350px;
       height: 300px;
@@ -197,13 +209,15 @@ const Wrapper = styled.section`
 
     .pretitle-pers {
       font-size: 18px;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
     }
 
     .text-pers {
       font-size: 14px;
       margin-left: 10px;
       margin-right: 10px;
-      text-align: left;
+
     }
 
     .l-soc {
@@ -212,6 +226,10 @@ const Wrapper = styled.section`
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .line-vertical {
+      display: none;
     }
 
     .infosoc {
@@ -227,6 +245,7 @@ const Wrapper = styled.section`
     .info1 p {
       font-size: 14px !important;
       margin-right: 20px;
+      text-align: center;
     }
   }
 
