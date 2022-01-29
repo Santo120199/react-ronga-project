@@ -78,6 +78,13 @@ const Wrapper = styled.section`
   }
 
   @media screen and (min-width: 320px) and (max-width: 424px) {
+
+    .titleHome {
+      margin-bottom: -10px;
+      margin-top: 70px;
+    }
+
+
     .filtro {
       margin-top: 60px;
     }
